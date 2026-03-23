@@ -1,5 +1,5 @@
 <?php
-require_once("../config/database.php");
+require_once __DIR__ . '/../config/database.php';
 
 /* Obtener servicios disponibles */
 $stmt = $pdo->prepare("SELECT * FROM servicios ORDER BY nombre");
