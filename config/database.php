@@ -1,3 +1,4 @@
+<?php
 $host = "sql306.infinityfree.com";
 $dbname = "if0_41459020_peluqueria";
 $user = "if0_41459020";
