@@ -1,5 +1,9 @@
 <?php
 require_once __DIR__ . '/../config/database.php';
+var_dump(file_exists(__DIR__ . '/../config/database.php'));
+var_dump(file_exists(__DIR__ . '/../../config/database.php'));
+exit;
+
 
 /* Obtener servicios disponibles */
 $stmt = $pdo->prepare("SELECT * FROM servicios ORDER BY nombre");
