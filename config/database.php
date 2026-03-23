@@ -1,12 +1,14 @@
 <?php
-$host = "sql306.infinityfree.com";
-$dbname = "if0_41459020_peluqueria";
-$user = "if0_41459020";
-$pass = "BarberPro2026";
+$host = "caboose.proxy.rlwy.net";
+$port = "16512";
+$dbname = "railway";
+$user = "root";
+$pass = "GwVmpMbqCXgmjAwmUkxorGhefYiEApWM";
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
+
